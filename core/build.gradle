@@ -37,12 +37,15 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     implementation "androidx.room:room-runtime:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
