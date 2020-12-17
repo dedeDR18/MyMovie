@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tidak_ada_daftar_favorite">Tidak ada daftar favorite</string>
+    <string name="title">Title</string>
+    <string name="date">Date Release</string>
+    <string name="popularity">Popularity</string>
+</resources>

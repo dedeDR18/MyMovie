@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_titles_movie">Movie</string>
+    <string name="tab_titles_tvshow">Tv Show</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title">Title</string>
+    <string name="date">Date Release</string>
+    <string name="popularity">Popularity</string>
+    <string name="image_poster_desc">Image Poster</string>
+    <string name="movie_title">Judul Film</string>
+    <string name="movie_date_release">Informasi Rilisan</string>
+    <string name="movie_vote_avarage">Skor</string>
+    <string name="movie_description">Deskripsi</string>
+    <string name="movie_language">Bahasa</string>
+    <string name="activity_detail_film">Detail Film</string>
+    <string name="activity_detail_tvshow">Detail Acara</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="message_undo">Batalkan menghapus item sebelumnya?</string>
+    <string name="message_ok">OK</string>
+    <string name="favorite_activity_title_tollbar">Favorite</string>
+    <string name="toast_error">Terjadi kesalahan</string>
+    <string name="popularitas">Popularitas</string>
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/pgDetail"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <ImageView
+            android:id="@+id/ivPosterMovie"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/image_poster_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/movie_title"
+            app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:id="@+id/titlee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            tools:text="Avengers : Infinity War"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:id="@+id/tvDateRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/movie_date_release"
+            app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
+            app:layout_constraintTop_toBottomOf="@+id/titlee"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:id="@+id/dateRelease"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
+            app:layout_constraintTop_toBottomOf="@+id/tvDateRelease"
+            tools:text="18/12/1995"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:id="@+id/tvVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/movie_vote_avarage"
+            app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
+            app:layout_constraintTop_toBottomOf="@+id/dateRelease"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:id="@+id/tvPopulartity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/popularitas"
+            app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
+            app:layout_constraintTop_toBottomOf="@+id/vote"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:id="@+id/popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
+            app:layout_constraintTop_toBottomOf="@+id/tvPopulartity"
+            tools:text="4.8"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:id="@+id/vote"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
+            app:layout_constraintTop_toBottomOf="@+id/tvVote"
+            tools:text="4.8"
+            android:layout_marginLeft="24dp" />
+
+        <TextView
+            android:id="@+id/tvLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/movie_language"
+            app:layout_constraintStart_toEndOf="@+id/tvVote"
+            app:layout_constraintTop_toBottomOf="@+id/dateRelease"
+            android:layout_marginLeft="45dp" />
+
+        <TextView
+            android:id="@+id/language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/vote"
+            app:layout_constraintTop_toBottomOf="@+id/tvLanguage"
+            tools:text="en"
+            android:layout_marginLeft="24dp" />
+
+
+        <TextView
+            android:id="@+id/tvOverview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/movie_description"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPosterMovie" />
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvOverview"
+            tools:text="Setelah akselerator partikel menyebabkan badai aneh, Penyelidik CSI Barry Allen disambar petir dan jatuh koma. Beberapa bulan kemudian dia terbangun dengan kekuatan kecepatan super, memberinya kemampuan untuk bergerak melalui Central City seperti malaikat penjaga yang tak terlihat. Meskipun awalnya senang dengan kekuatan barunya, Barry terkejut menemukan bahwa dia bukan satu-satunya manusia meta yang diciptakan setelah ledakan akselerator - dan tidak semua orang menggunakan kekuatan baru mereka untuk kebaikan. Barry bermitra dengan S.T.A.R. Lab dan mendedikasikan hidupnya untuk melindungi yang tidak bersalah. Untuk saat ini, hanya beberapa teman dekat dan rekan yang tahu bahwa Barry secara harfiah adalah manusia tercepat, tetapi tidak lama sebelum dunia mengetahui apa yang menjadi Barry Allen ... The Flash" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
