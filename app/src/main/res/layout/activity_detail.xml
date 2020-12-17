@@ -39,8 +39,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/movie_title"
             app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginLeft="24dp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/titlee"
@@ -53,7 +52,7 @@
             app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
             app:layout_constraintTop_toBottomOf="@+id/tvTitle"
             tools:text="Avengers : Infinity War"
-            android:layout_marginLeft="24dp" />
+            />
 
         <TextView
             android:id="@+id/tvDateRelease"
@@ -63,8 +62,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/movie_date_release"
             app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
-            app:layout_constraintTop_toBottomOf="@+id/titlee"
-            android:layout_marginLeft="24dp" />
+            app:layout_constraintTop_toBottomOf="@+id/titlee" />
 
         <TextView
             android:id="@+id/dateRelease"
@@ -76,8 +74,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
             app:layout_constraintTop_toBottomOf="@+id/tvDateRelease"
-            tools:text="18/12/1995"
-            android:layout_marginLeft="24dp" />
+            tools:text="18/12/1995" />
 
         <TextView
             android:id="@+id/tvVote"
@@ -88,7 +85,7 @@
             android:text="@string/movie_vote_avarage"
             app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
             app:layout_constraintTop_toBottomOf="@+id/dateRelease"
-            android:layout_marginLeft="24dp" />
+             />
 
         <TextView
             android:id="@+id/tvPopulartity"
@@ -99,7 +96,7 @@
             android:text="@string/popularitas"
             app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
             app:layout_constraintTop_toBottomOf="@+id/vote"
-            android:layout_marginLeft="24dp" />
+             />
 
         <TextView
             android:id="@+id/popularity"
@@ -111,7 +108,7 @@
             app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
             app:layout_constraintTop_toBottomOf="@+id/tvPopulartity"
             tools:text="4.8"
-            android:layout_marginLeft="24dp" />
+             />
 
         <TextView
             android:id="@+id/vote"
@@ -123,7 +120,7 @@
             app:layout_constraintStart_toEndOf="@+id/ivPosterMovie"
             app:layout_constraintTop_toBottomOf="@+id/tvVote"
             tools:text="4.8"
-            android:layout_marginLeft="24dp" />
+             />
 
         <TextView
             android:id="@+id/tvLanguage"
@@ -134,7 +131,7 @@
             android:text="@string/movie_language"
             app:layout_constraintStart_toEndOf="@+id/tvVote"
             app:layout_constraintTop_toBottomOf="@+id/dateRelease"
-            android:layout_marginLeft="45dp" />
+             />
 
         <TextView
             android:id="@+id/language"
@@ -146,7 +143,7 @@
             app:layout_constraintStart_toEndOf="@+id/vote"
             app:layout_constraintTop_toBottomOf="@+id/tvLanguage"
             tools:text="en"
-            android:layout_marginLeft="24dp" />
+             />
 
 
         <TextView
