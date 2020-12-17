@@ -14,8 +14,7 @@ import id.learn.android.core.ui.MovieAdapter
 import id.learn.android.mymovie.databinding.ActivityMainBinding
 import id.learn.android.mymovie.detail.DetailActivity
 import id.learn.android.mymovie.detail.DetailActivity.Companion.EXTRA_DATA
-import kotlinx.android.synthetic.main.content_main.*
-import kotlinx.android.synthetic.main.content_main.view.*
+
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity() {
@@ -36,24 +35,24 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.root.pgMain.visibility = View.VISIBLE
+        binding.idContent.pgMain.visibility = View.VISIBLE
         mainViewModel.movies.observe(this, { movie ->
             if (movie != null){
                 when (movie){
-                    is Resource.Loading -> binding.root.pgMain.visibility = View.VISIBLE
+                    is Resource.Loading -> binding.idContent.pgMain.visibility = View.VISIBLE
                     is Resource.Success -> {
-                        binding.root.pgMain.visibility = View.GONE
+                        binding.idContent.pgMain.visibility = View.GONE
                         movieAdapter.setData(movie.data)
                     }
                     is Resource.Error -> {
-                        binding.root.pgMain.visibility = View.GONE
+                        binding.idContent.pgMain.visibility = View.GONE
                         Toast.makeText(this, getString(R.string.main_error), Toast.LENGTH_SHORT).show()
                     }
                 }
             }
         })
 
-        with(rvMovie){
+        with(binding.idContent.rvMovie){
             layoutManager = LinearLayoutManager(context)
             setHasFixedSize(true)
             adapter = movieAdapter

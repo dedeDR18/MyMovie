@@ -16,7 +16,7 @@
 
 
 
-    <include layout="@layout/content_favorite" />
+    <include android:id="@+id/id_content_fav" layout="@layout/content_favorite" />
 
     <include
         android:id="@+id/view_empty_data"

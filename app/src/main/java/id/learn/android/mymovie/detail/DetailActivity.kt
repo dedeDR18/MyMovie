@@ -11,7 +11,6 @@ import com.bumptech.glide.request.RequestOptions
 import id.learn.android.core.domain.model.Movie
 import id.learn.android.mymovie.R
 import id.learn.android.mymovie.databinding.ActivityDetailBinding
-import kotlinx.android.synthetic.main.activity_detail.*
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class DetailActivity : AppCompatActivity() {
@@ -49,13 +48,13 @@ class DetailActivity : AppCompatActivity() {
                     RequestOptions.placeholderOf(R.drawable.ic_base_image)
                         .error(R.drawable.ic_base_broken_image)
                 )
-                .into(ivPosterMovie)
-            titlee.text = movie.originalTitle
-            dateRelease.text = movie.releaseDate
-            vote.text = movie.voteAvarage.toString()
-            language.text = movie.originalLanguage
-            popularity.text = movie.popularity.toString()
-            overview.text = movie.overview
+                .into(binding.ivPosterMovie)
+            binding.titlee.text = movie.originalTitle
+            binding.dateRelease.text = movie.releaseDate
+            binding.vote.text = movie.voteAvarage.toString()
+            binding.language.text = movie.originalLanguage
+            binding.popularity.text = movie.popularity.toString()
+            binding.overview.text = movie.overview
             binding.pgDetail.visibility = View.GONE
         }
 

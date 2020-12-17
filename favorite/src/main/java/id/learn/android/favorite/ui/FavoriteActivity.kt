@@ -10,9 +10,6 @@ import id.learn.android.favorite.databinding.ActivityFavoriteBinding
 import id.learn.android.favorite.di.favoriteModule
 import id.learn.android.mymovie.R
 import id.learn.android.mymovie.detail.DetailActivity
-import kotlinx.android.synthetic.main.activity_favorite.view.*
-import kotlinx.android.synthetic.main.content_favorite.*
-import kotlinx.android.synthetic.main.content_favorite.view.*
 import org.koin.android.viewmodel.ext.android.viewModel
 import org.koin.core.context.loadKoinModules
 
@@ -42,7 +39,7 @@ class FavoriteActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        with(rvFavMovie){
+        with(binding.idContentFav.rvFavMovie){
             layoutManager = LinearLayoutManager(this@FavoriteActivity)
             setHasFixedSize(true)
             adapter = favoriteAdapter
@@ -50,14 +47,14 @@ class FavoriteActivity : AppCompatActivity() {
     }
 
     private fun getFavoriteMovie(){
-        binding.root.pgFavorite.visibility = View.VISIBLE
+        binding.idContentFav.pgFavorite.visibility = View.VISIBLE
         favoriteViewModel.favMovie.observe(this, { favMovie ->
             favMovie?.let { list ->
                 favoriteAdapter.setData(favMovie)
-                binding.root.pgFavorite.visibility = View.GONE
-                binding.root.view_empty_data.visibility = View.GONE
+                binding.idContentFav.pgFavorite.visibility = View.GONE
+                binding.viewEmptyData.root.visibility = View.GONE
                 if (list.isEmpty()){
-                    binding.root.view_empty_data.visibility = View.VISIBLE
+                    binding.viewEmptyData.root.visibility = View.VISIBLE
                 }
             }
         })
